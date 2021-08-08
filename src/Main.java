@@ -1,15 +1,31 @@
 public class Main {
     public static void main(String[] args) {
-        ListaDoble listaDoble = new ListaDoble();
-        listaDoble.append(0);
-        listaDoble.append(1);
-        listaDoble.append(2);
-        listaDoble.append(3);
-        listaDoble.append(4);
-        listaDoble.append(5);
-        listaDoble.append(6);
-        listaDoble.append(7);
 
-        listaDoble.print();
+        CircularDoublyLinkedList list = new CircularDoublyLinkedList();
+
+        list.append(8);
+        list.append(7);
+        list.append(5);
+        list.append(4);
+        list.append(9);
+        list.append(15);
+        list.append(14);
+        list.append(25);
+        list.append(21);
+        list.append(16);
+        list.append(0);
+        list.append(1);
+        list.append(2);
+        list.append(3);
+
+        list.remove(8);
+        list.remove(15);
+        list.remove(3);
+        list.remove(25);
+
+        list.append(25);
+        list.append(3);
+
+        list.print();
     }
 }
